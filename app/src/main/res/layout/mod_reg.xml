@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mod_reg"
+    android:background="@drawable/gradient_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/nomMed_input2"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="ID de médicament"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/concMin_input2"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Concentration minimal"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomMed_input2" />
+
+    <EditText
+        android:id="@+id/concMax_input2"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Concentration maximal"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concMin_input2" />
+
+    <EditText
+        android:id="@+id/coeff_input2"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Coefficient"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concMax_input2" />
+
+    <Button
+        android:id="@+id/bilan_type_btn"
+        android:layout_width="288dp"
+        android:layout_height="78dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:onClick="afficherMenu"
+        android:text="Type De Bilan"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="510dp"
+        app:layout_constraintTop_toBottomOf="@+id/radiobtn1"/>
+
+    <Button
+        android:id="@+id/modifier_reg"
+        android:layout_width="157dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Modifier"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilan_type_btn" />
+
+    <Button
+        android:id="@+id/supprimer_regle"
+        android:layout_width="157dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Supprimer"
+        android:onClick="supprimerMth"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilan_type_btn" />
+
+    <RadioGroup
+        android:id="@+id/radiobtn1"
+        android:layout_width="284dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/bilan_type_btn"
+        app:layout_constraintTop_toBottomOf="@+id/coeff_input2"
+        tools:layout_editor_absoluteX="47dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C'est un coefficient." />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ce n'est pas un coefficient." />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

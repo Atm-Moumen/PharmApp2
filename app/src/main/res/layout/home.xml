@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:text="BIENVENUE SUR PharmApp"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btn_continuer"
+        android:layout_width="310dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/btn"
+        android:onClick="contineuMethode"
+        android:text="Continuer"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:contextClickable="true"
+        android:text="Qui nous?" />
+</LinearLayout>

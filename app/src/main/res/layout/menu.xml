@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="60dp"
+        android:textStyle="italic"
+
+        android:text="MENU" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn"
+        android:text="Patients"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:onClick="patientMethod"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn"
+        android:text="Médicaments"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:onClick="medicamentMethod"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn"
+        android:text="Préparation"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:onClick="preparationMethod"/>
+
+
+</LinearLayout>

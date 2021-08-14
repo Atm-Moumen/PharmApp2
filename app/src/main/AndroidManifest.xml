@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pharmapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/photo"
+        android:label="PharmApp"
+        android:roundIcon="@drawable/photo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PharmApp">
+        <activity android:name=".resultat"
+            android:label="Résultat"></activity>
+        <activity
+            android:name=".mod_reg"
+            android:label="Modifier une règle"
+            android:parentActivityName=".regle" />
+        <activity
+            android:name=".regle"
+            android:label="Règles"
+            android:parentActivityName=".menu" />
+        <activity
+            android:name=".mod_med"
+            android:parentActivityName=".medicament" />
+        <activity
+            android:name=".mod_pat"
+            android:label="Modification "
+            android:parentActivityName=".patient" />
+        <activity
+            android:name=".preparation_3_champ"
+            android:label="Préparation d&apos;un médicament"
+            android:parentActivityName=".preparation" />
+        <activity
+            android:name=".preparation_2_champ"
+            android:label="Préparation d&apos;un médicament"
+            android:parentActivityName=".preparation" />
+        <activity
+            android:name=".preparation_1_champ"
+            android:label="Préparation d&apos;un médicament "
+            android:parentActivityName=".preparation" />
+        <activity
+            android:name=".preparation"
+            android:label="Préparation d&apos;un médicament"
+            android:parentActivityName=".menu" />
+        <activity
+            android:name=".ajou_reg"
+            android:label="Ajouter une règle"
+            android:parentActivityName=".regle" />
+        <activity
+            android:name=".ajou_med"
+            android:label="Ajouter un médicament"
+            android:parentActivityName=".medicament" />
+        <activity
+            android:name=".medicament"
+            android:label="Médicament"
+            android:parentActivityName=".menu" />
+        <activity
+            android:name=".ajou_pat"
+            android:label="Ajouter un patient"
+            android:parentActivityName=".patient" />
+        <activity
+            android:name=".patient"
+            android:label="Patients"
+            android:parentActivityName=".menu" />
+        <activity
+            android:name=".menu"
+            android:label="MENU"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
